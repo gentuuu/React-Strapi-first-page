@@ -1,0 +1,45 @@
+.footer{
+    background: #122738;
+    color: #fff;
+    padding: 40px 0;
+    & ul{
+        list-style: none;
+        font-size: 18px;
+        & li{
+            margin-bottom: 10px;
+            span{
+                display: block;
+                font-weight: 600;
+                margin-bottom: px;
+            }
+        }
+    }
+    &-content{
+        display: flex;
+        justify-content: space-between;
+    }
+    &-span{
+        font-size: 22px;
+        margin-bottom: 30px;
+        display: block;
+        color: #19ce67; 
+        font-weight: 700;
+    }
+    &-logo{
+        font-size: 16px;
+        width: 30%;
+    }
+    &-menu{
+        width: 30%;
+    }
+    &-info{
+        width: 30%;
+    }
+    &-copyright{
+        padding: 20px;
+        color: #fff;
+        font-size: 19px;
+        text-align: center;
+        background: #070d1a;
+    }
+}

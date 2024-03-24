@@ -1,0 +1,114 @@
+.homeprojects{
+    padding: 50px 0;
+    background: #26252b;
+    &__title{
+        font-size: 35px;
+        line-height: 40px;
+        color: #fff;
+    }
+    &__text{
+        margin-top: 30px;
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 16px;
+    }
+    &-items{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+        margin: 40px 0; 
+    }
+    &-item{
+        width: 100%;
+        &__img{
+            width: 100%;
+            & img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        } 
+        &__title{
+           padding: 15px;
+           font-size: 20px;
+           color: #fff; 
+           text-align: center;
+        }
+    }
+}
+
+
+.projects{
+    background: #f4f9fd;
+    &-content{
+        padding: 50px;
+    }
+    &__title{
+        font-size: 35px;
+    }
+    &__text{
+        font-size: 18px;
+        color: #797979;
+    }
+    &-items{
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+    &-item{
+        transition: all .5s;
+        &:hover{
+            transform: translateY(-5px);
+            transition: all .5s;
+            & .projects-item__title{
+                color: #19ce67;
+                transition: all .5s;
+            }
+
+        }
+        &__img{
+            height: 200px;
+            overflow: hidden;
+            & img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: all 0.3s linear;
+            }
+        }
+        &__content{
+            padding: 15px;
+            transition: all 0.3s linear;
+            background: #fff;
+            box-shadow: 0 0 20px 3px rgb(0 0 0 / 5%);
+        }
+        &__title{
+            font-size: 24px;
+            font-weight: 700;
+            transition: all .5s;
+        }
+        &__text{
+            font-size: 16px;
+            color: #797979;
+            margin-top: 10px;
+        }
+        &__link{
+            & a{
+                font-size: 15px;
+                color: #19ce67;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+.homeproject{
+    &-content{
+        padding: 50px 0;
+        font-size: 16px;
+        & img{
+            width: 100%;
+        }
+    }
+
+}

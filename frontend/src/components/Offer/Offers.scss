@@ -1,0 +1,129 @@
+.homeoffers{
+    padding: 50px 0;
+    background: #26252b;
+    &__title{
+        font-size: 35px;
+        line-height: 40px;
+        color: #fff;
+    }
+    &__text{
+        margin-top: 30px;
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 16px;
+    }
+    &-items{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+        margin: 40px 0; 
+    }
+    &-item{
+        width: 100%;
+        border: 1px solid #38373a;
+        &__img{
+            width: 100%;
+            height: 200px;
+            & img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        } 
+        &__title{
+           padding: 15px;
+           font-size: 20px;
+           color: #fff; 
+        }
+        &__text{
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.5);
+            padding: 0 15px;
+        }
+        &__link{
+            padding: 15px;
+            text-align: right;
+            & a{
+                color: #fff;
+                font-size: 15px;
+                margin-top: 15px;
+
+            }
+        }
+    }
+}
+
+
+.offers{
+    &-content{
+        padding: 50px;
+    }
+    &__title{
+        font-size: 35px;
+    }
+    &__text{
+        font-size: 18px;
+        color: #797979;
+    }
+    &-items{
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+    &-item{
+
+        &:hover{
+            & .offers-item__content{
+                box-shadow: 0px 0px 43px 0px rgb(0 0 0 / 19%);
+                transition: all 0.3s linear;
+            }
+            & .offers-item__img img{
+                transform: scale(1.2);
+                transition: all 0.3s linear;
+                overflow: hidden;
+            }
+        }
+        &__img{
+            height: 200px;
+            overflow: hidden;
+            & img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: all 0.3s linear;
+            }
+        }
+        &__content{
+            border: 1px solid #dcdcdc;
+            padding: 15px;
+            transition: all 0.3s linear;
+        }
+        &__title{
+            font-size: 24px;
+            font-weight: 700;
+        }
+        &__text{
+            font-size: 16px;
+            color: #797979;
+            margin-top: 25px;
+        }
+        &__link{
+            & a{
+                font-size: 15px;
+                color: #4f73b4;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+.offer{
+    &-content{
+        padding: 50px 0;
+        font-size: 16px;
+        & img{
+            width: 100%;
+        }
+    }
+
+}
